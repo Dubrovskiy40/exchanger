@@ -1,0 +1,336 @@
+/* Обнуление */
+*,
+*::before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+body {
+  font-family: 'News Cycle', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+}
+
+/*-------------------*/
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 118px;
+}
+
+.title_text {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  color: #1A1939;
+}
+
+.subtitle_text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #1A1939;
+}
+
+.main_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1A1939;
+}
+
+.header {
+  background: #FCFBFD;
+  padding: 53px 0;
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #1A1939;
+    margin-right: 15px;
+  }
+}
+
+.list {
+  display: flex;
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+
+  }
+
+  &__link {
+
+  }
+
+  &__dynamics:before {
+    content: url("../images/Arrow.svg");
+    margin-left: 10px;
+  }
+}
+
+.dynamics__btc {
+}
+
+.dynamics__eth {
+}
+
+.dynamics__usdt {
+}
+
+.dynamics__bnb {
+}
+
+.dynamics__usdc {
+}
+
+.section__banner {
+  margin: 61px 0 130px;
+
+  &-content {
+    background: url('../images/baner.png') center / contain no-repeat;
+    height: 250px;
+    width: 100%;
+  }
+}
+
+.list-of-currencies {
+  margin-bottom: 130px;
+}
+
+.currencies {
+}
+
+.currency {
+  padding: 60px 144px 60px 113px;
+  background: #FCFBFD;
+  box-shadow: 0 4px 20px rgba(194, 188, 198, 0.8);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:hover {
+    background: #F8F1FF;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &__title-wrap {
+
+  }
+
+  &__title {
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    color: #1A1939;
+    margin-bottom: 18px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__info-wrap {
+
+  }
+
+  &__btn-wrap {
+
+  }
+
+  &__btn {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FCFBFD;
+    background: #1D62E8;
+    border-radius: 10px;
+    padding: 18px 112px 20px 112px;
+
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.info {
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 38px;
+    margin-right: 10px;
+  }
+
+  &__exchange:before {
+    content: url("../images/currency_exchange.svg");
+    margin-right: 10px;
+  }
+
+  &__rating:before {
+    content: url("../images/chart_graph.svg");
+    margin-right: 10px;
+  }
+
+  &__review:before {
+    content: url("../images/bubble chat.svg");
+    margin-right: 10px;
+  }
+}
+
+.exchangers {
+  padding: 60px 113px 80px;
+
+  &__top {
+    background: url('../images/change.png') right / contain no-repeat;
+    margin-bottom: 130px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    max-width: 855px;
+  }
+
+  &__text:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &__bottom {
+
+    &-item:before {
+      content: url("../images/approved_check.svg");
+      margin-right: 10px;
+    }
+  }
+}
+
+
+.review {
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+}
+
+.stars {
+  display: flex;
+
+  &__item {
+
+  }
+
+  &__item:before {
+    content: url("../images/Star-fill.svg");
+    margin-right: 5px;
+  }
+}
+
+.disclaimer {
+
+  margin-bottom: 130px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__text {
+
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-bottom: 70px;
+
+  &__link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #1A1939;
+    margin-right: 15px;
+  }
+
+  &__info-block {
+    margin-top: 34px;
+    margin-bottom: 75px;
+    display: flex;justify-content: space-between;
+  }
+}

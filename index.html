@@ -5,21 +5,222 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <script src="./script/script.js"></script>
     <title>Exchanger</title>
 </head>
 <body>
-    <header>
+<div class="container">
+    <header class="header">
+
+        <div class="header__block">
+            <a class="header__link" href="#">ТОП ОБМЕННИКОВ</a>
+            <ul class="list">
+                <li class="list__item">
+                    <a class="list__link subtitle_text" href="#">BTC 30,347 $</a>
+                    <span class="list__dynamics dynamics__btc"></span>
+                </li>
+                <li class="list__item">
+                    <a class="list__link subtitle_text" href="#">ETH 2,060 $</a>
+                    <span class="list__dynamics dynamics__eth"></span>
+                </li>
+                <li class="list__item">
+                    <a class="list__link subtitle_text" href="#">USDT 0,499 $</a>
+                    <span class="list__dynamics dynamics__usdt"></span>
+                </li>
+                <li class="list__item">
+                    <a class="list__link subtitle_text" href="#">BNB 331,23 $</a>
+                    <span class="list__dynamics dynamics__bnb"></span>
+                </li>
+                <li class="list__item">
+                    <a class="list__link subtitle_text" href="#">USDC 1,00 $</a>
+                    <span class="list__dynamics dynamics__usdc"></span>
+                </li>
+            </ul>
+        </div>
 
     </header>
 
     <main>
 
+        <section class="section__banner">
+            <div class="section__banner-content"></div>
+        </section>
+
+        <section class="list-of-currencies">
+            <ul class="currencies">
+                <li class="currency">
+                    <div class="currency__title-wrap">
+                        <h2 class="currency__title">Prostocash</h2>
+                        <img class="currency__img" src="./images/Prostocash.png" alt="Prostocash">
+                    </div>
+                    <ul class="currency__info-wrap info">
+                        <li class="info__item main_text info__exchange">6 направлений обмена</li>
+                        <li class="info__item main_text info__rating">рейтинг 4.5/5</li>
+                        <li class="info__item main_text info__review">15 отзывов</li>
+                    </ul>
+                    <div class="currency__btn-wrap">
+                        <button class="currency__btn">перейти на сайт</button>
+                    </div>
+                </li>
+                <li class="currency">
+                    <div class="currency__title-wrap">
+                        <h2 class="currency__title">Nice Change</h2>
+                        <img class="currency__img" src="./images/NiceChange.png" alt="Nice Change">
+                    </div>
+                    <ul class="currency__info-wrap info">
+                        <li class="info__item main_text info__exchange">3851 направление обмена</li>
+                        <li class="info__item main_text info__rating">рейтинг 4.5/5</li>
+                        <li class="info__item main_text info__review">15 отзывов</li>
+                    </ul>
+                    <div class="currency__btn-wrap">
+                        <button class="currency__btn">перейти на сайт</button>
+                    </div>
+                </li>
+                <li class="currency">
+                    <div class="currency__title-wrap">
+                        <h2 class="currency__title">Baksman</h2>
+                        <img class="currency__img" src="./images/Baksman.png" alt="Baksman">
+                    </div>
+                    <ul class="currency__info-wrap info">
+                        <li class="info__item main_text info__exchange">4420 направлений обмена</li>
+                        <li class="info__item main_text info__rating">рейтинг 4.5/5</li>
+                        <li class="info__item main_text info__review">15 отзывов</li>
+                    </ul>
+                    <div class="currency__btn-wrap">
+                        <button class="currency__btn">перейти на сайт</button>
+                    </div>
+                </li>
+                <li class="currency">
+                    <div class="currency__title-wrap">
+                        <h2 class="currency__title">60cek</h2>
+                        <img class="currency__img" src="./images/time.png" alt="60cek">
+                    </div>
+                    <ul class="currency__info-wrap info">
+                        <li class="info__item main_text info__exchange">2606 направлений обмена</li>
+                        <li class="info__item main_text info__rating">рейтинг 4.5/5</li>
+                        <li class="info__item main_text info__review">15 отзывов</li>
+                    </ul>
+                    <div class="currency__btn-wrap">
+                        <button class="currency__btn">перейти на сайт</button>
+                    </div>
+                </li>
+                <li class="currency">
+                    <div class="currency__title-wrap">
+                        <h2 class="currency__title">Kassa</h2>
+                        <img class="currency__img" src="./images/kassa.png" alt="Kassa">
+                    </div>
+                    <ul class="currency__info-wrap info">
+                        <li class="info__item main_text info__exchange">538 направлений обмена</li>
+                        <li class="info__item main_text info__rating">рейтинг 4.5/5</li>
+                        <li class="info__item main_text info__review">15 отзывов</li>
+                    </ul>
+                    <div class="currency__btn-wrap">
+                        <button class="currency__btn">перейти на сайт</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="exchangers">
+            <div class="exchangers__top">
+                <h2 class="exchangers__title title_text">Обменники электронной валюты</h2>
+                <p class="exchangers__text main_text">Обменники электронной валюты — это онлайн-сервисы, которые
+                    предоставляют возможность обменять
+                    платёжные системы, электронные деньги, криптовалюту и другие цифровые активы, например, перевести
+                    деньги Qiwi в Биткоин или вывести Bitcoin в рубли на СберБанк.
+
+                    На сегодняшний день существует множество различных электронных платёжных систем. Самыми популярными
+                    в России, Украине, Беларуси являются такие: Qiwi, Яндекс.Деньги, Вебмани, Advcash, Perfect Money,
+                    Payeer, Skrill, PayPal, Neteller. Иногда возникает необходимость обменять средства, вывести
+                    их или пополнить счёт. Криптовалюты Bitcoin, Ethereum, Litecoin и другие можно купить или продать
+                    в электронных обменниках за фиатные валюты (рубли, доллары, гривны, евро и т.д.).</p>
+                <p class="exchangers__text main_text">На сегодняшний день существует множество различных электронных
+                    платёжных систем. Самыми популярными в
+                    России, Украине, Беларуси являются такие: Qiwi, Яндекс.Деньги, Вебмани, Advcash, Perfect Money,
+                    Payeer, Skrill, PayPal, Neteller. Иногда возникает необходимость обменять средства, вывести их или
+                    пополнить счёт. Криптовалюты Bitcoin, Ethereum, Litecoin и другие можно купить или продать в
+                    электронных обменниках за фиатные валюты (рубли, доллары, гривны, евро и т.д.).</p>
+            </div>
+            <div class="exchangers__bottom">
+                <h2 class="exchangers__title title_text">Как выбрать обменник</h2>
+                <p class="exchangers__text main_text">Чтобы минимизировать риски и обменять свои деньги с наилучшей
+                    выгодой и безопасностью обратите внимание на следующие показатели:</p>
+                <ul>
+                    <li class="info__item exchangers__bottom-item main_text">длительность работы платформы;</li>
+                    <li class="info__item exchangers__bottom-item main_text">наличие отзывов на профильных независимых
+                        площадках;
+                    </li>
+                    <li class="info__item exchangers__bottom-item main_text">диапазон валют, наличие важных
+                        направлений;
+                    </li>
+                    <li class="info__item exchangers__bottom-item main_text">количество резервы по необходимым типам
+                        валют;
+                    </li>
+                    <li class="info__item exchangers__bottom-item main_text">присутствие обменника в агрегаторах, куда
+                        попадают только проверенные площадки;
+                    </li>
+                    <li class="info__item exchangers__bottom-item main_text">быстрота ответов технической поддержки</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="comments">
+
+        </section>
+
+        <section class="review">
+            <h2 class="review__title title_text">Отказ от обязательств</h2>
+            <span class="review__text subtitle_text">Оцените данный обзор</span>
+            <ul class="stars">
+                <li class="stars__item"></li>
+                <li class="stars__item"></li>
+                <li class="stars__item"></li>
+                <li class="stars__item"></li>
+                <li class="stars__item"></li>
+            </ul>
+        </section>
+
+        <section class="disclaimer">
+            <h2 class="disclaimer__title title_text">Отказ от обязательств</h2>
+            <span class="disclaimer__text main_text">Отказ от обязательств: топ обменников — бесплатный сервис. Нас поддерживают читатели, а также мы получаем комиссии от сайтов обменников, которых рекомендуем (когда вы переходите по нашим ссылкам и делаете покупку через наш сайт). Мы следим за актуальностью и точностью всех материалов, хотя и не можем её гарантировать в любой момент времени. Все цены основаны на долларах США, информация о локальных валютах приведена для справки и может варьироваться в зависимости от курса.</span>
+        </section>
     </main>
 
     <footer>
-
+        <a class="footer__link" href="#">ТОП ОБМЕННИКОВ</a>
+        <div class="footer__info-block">
+            <ul>
+                <li class=" main_text">Здесь написана информация например: Топ обменников информационно — аналитический
+                    портал
+                </li>
+                <li class=" main_text">Пользовательское соглашение Политика конфиденциальности Отказ от
+                    ответственности
+                </li>
+            </ul>
+            <ul>
+                <li class=" main_text">Пользовательское соглашение</li>
+                <li class=" main_text">Политика конфиденциальности</li>
+                <li class=" main_text">Отказ от ответственности</li>
+            </ul>
+            <ul>
+                <li class=" main_text">Email: pochta@mail.com</li>
+                <li class=" main_text">Контакты</li>
+            </ul>
+        </div>
+        <span class=" main_text">Copyright © топобменников, 2022. Все права защищены. Все материалы данного сайта
+                являются объектами
+                авторского права. Запрещается копирование, распространение или любое иное использование информации и
+                объектов без предварительного согласия правообладателя. Все статьи носят информационный характер и не
+                являются призывом к действию.
+        </span>
     </footer>
+</div>
 </body>
 </html>
