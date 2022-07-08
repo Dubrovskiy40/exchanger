@@ -1,0 +1,87 @@
+@mixin font_48 {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+@mixin font_32 {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+@mixin font_24 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+@mixin font_20 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@mixin font_18 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+@mixin font_18_2 {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+@mixin font_16 {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+@mixin font_15 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+@mixin font_15_2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+@mixin font_10 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+@mixin font_10_2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+@mixin font_8 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 13px;
+}

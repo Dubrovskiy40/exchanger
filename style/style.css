@@ -54,6 +54,18 @@ body {
   padding: 0 118px;
 }
 
+@media (max-width: 1190px) {
+  .container {
+    max-width: 704px;
+    padding: 0 32px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 343px; /* padding: 0 calc(50% - 343px / 2); */
+    padding: 0 16px;
+  }
+}
 .title_text {
   font-family: "Russo One";
   font-style: normal;
@@ -101,6 +113,8 @@ body {
 
 .list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .list__item:not(:last-child) {
   margin-right: 40px;
@@ -111,7 +125,7 @@ body {
 }
 
 .section__banner {
-  margin: 61px 0 130px;
+  margin: 61px 0 70px;
 }
 .section__banner-content {
   background: url("../images/baner.png") center/contain no-repeat;
@@ -120,7 +134,9 @@ body {
 }
 
 .list-of-currencies {
-  margin-bottom: 130px;
+  padding-top: 60px;
+  padding-bottom: 130px;
+  background: #D7D4D4;
 }
 
 .currency {
@@ -130,7 +146,7 @@ body {
   border-radius: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .currency:hover {
   background: #F8F1FF;
@@ -151,6 +167,7 @@ body {
   width: 100%;
 }
 .currency__btn {
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -170,8 +187,6 @@ body {
 .info__item {
   display: flex;
   align-items: center;
-}
-.info__item:not(:last-child) {
   margin-bottom: 38px;
   margin-right: 10px;
 }
@@ -189,10 +204,11 @@ body {
 }
 
 .exchangers {
-  padding: 60px 113px 80px;
+  padding: 60px 0 80px;
+  background: #FCFBFD;
 }
 .exchangers__top {
-  background: url("../images/change.png") right/contain no-repeat;
+  background: url("../images/change.png") right/auto no-repeat;
   margin-bottom: 130px;
 }
 .exchangers__title {
@@ -208,24 +224,116 @@ body {
   content: url("../images/approved_check.svg");
   margin-right: 10px;
 }
+.exchangers__bottom ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
+.comments {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background: #D7D4D4;
+}
+.comments__title-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.comments__title {
+  margin-right: 40px;
+}
+.comments__subtitle {
+  margin-right: auto;
+}
+.comments__name-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.comments__name {
+  margin-right: 20px;
+}
+.comments__date {
+  margin-right: 20px;
+}
+.comments__btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #FCFBFD;
+  background: #1D62E8;
+  border-radius: 10px;
+  padding: 18px 0 18px;
+  width: 308px;
+}
+
+.review {
+  padding-bottom: 130px;
+  background: #D7D4D4;
+}
 .review__title {
   margin-bottom: 40px;
 }
-.review__text {
-  margin-bottom: 20px;
+.review ul {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .stars {
   display: flex;
+  align-items: center;
 }
 .stars__item:before {
   content: url("../images/Star-fill.svg");
   margin-right: 5px;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form__inp {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  background: #FCFBFD;
+  border-radius: 10px;
+  width: 100%;
+  height: 60px;
+}
+.form__textarea {
+  height: 250px;
+}
+.form__btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FCFBFD;
+  background: #8E8F90;
+  border-radius: 10px;
+  padding: 18px 0 18px;
+  max-width: 308px;
+}
+
 .disclaimer {
-  margin-bottom: 130px;
+  background: #D7D4D4;
+  padding-bottom: 130px;
 }
 .disclaimer__title {
   margin-bottom: 40px;
@@ -233,8 +341,9 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
-  margin-bottom: 70px;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background: #FCFBFD;
 }
 .footer__link {
   font-style: normal;
@@ -250,6 +359,153 @@ body {
   margin-bottom: 75px;
   display: flex;
   justify-content: space-between;
+}
+.footer__info-block ul {
+  padding: 10px 20px;
+}
+
+@media (max-width: 1190px) {
+  .header {
+    padding: 30px 0;
+  }
+  .header__link {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  .section__banner {
+    margin: 32px 0;
+  }
+  .section__banner-content {
+    margin: 0;
+    height: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .title_text {
+    font-family: "Russo One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .subtitle_text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .main_text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .header {
+    padding: 8px 0;
+  }
+  .header__link {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 13px;
+  }
+  .section__banner {
+    margin: 12px 0;
+  }
+  .section__banner-content {
+    height: 70px;
+  }
+  .comments {
+    padding-top: 30px;
+    padding-bottom: 32px;
+  }
+  .comments__title-wrap {
+    margin-bottom: 20px;
+  }
+  .comments__title {
+    margin-right: 46px;
+    margin-bottom: 16px;
+  }
+  .comments__subtitle {
+    margin-right: 0;
+  }
+  .comments__name-wrap {
+    margin-top: 18px;
+    margin-bottom: 4px;
+  }
+  .comments__name {
+    margin-right: 4px;
+  }
+  .comments__date {
+    margin-right: auto;
+  }
+  .comments__btn {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 10px;
+    border-radius: 4px;
+    padding: 10px 7px;
+    width: 138px;
+  }
+  .review {
+    padding-bottom: 30px;
+  }
+  .review__title {
+    margin-bottom: 8px;
+  }
+  .review ul {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .form__inp {
+    margin-top: 4px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    width: 100%;
+    height: 30px;
+  }
+  .form__textarea {
+    height: 120px;
+  }
+  .form__btn {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 10px;
+    border-radius: 4px;
+    padding: 10px 0 10px;
+    max-width: 138px;
+  }
+  .disclaimer {
+    padding-bottom: 30px;
+  }
+  .disclaimer__title {
+    margin-bottom: 8px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    padding-bottom: 32px;
+  }
+  .footer__link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 10px;
+    margin-right: 15px;
+  }
+  .footer__info-block {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer__info-block ul {
+    padding-bottom: 8px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
