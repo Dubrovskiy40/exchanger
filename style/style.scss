@@ -49,6 +49,7 @@
   }
 
   &__link {
+    @include font_24;
   }
 
   &__dynamics:before {
@@ -85,7 +86,7 @@
 .list-of-currencies {
   padding-top: 60px;
   padding-bottom: 130px;
-  background: $color-white_4;
+  background: $color-white_1;
 }
 
 .currencies {
@@ -93,7 +94,7 @@
 
 .currency {
   padding: 60px 144px 60px 113px;
-  background: $color-white_1;
+  background: $color-white_5;
   box-shadow: 0 4px 20px rgba(194, 188, 198, 0.8);
   border-radius: 20px;
   display: flex;
@@ -109,6 +110,7 @@
   }
 
   &__title-wrap {
+    margin-right: 20px;
   }
 
   &__title {
@@ -265,6 +267,20 @@
     margin-bottom: 40px;
   }
 
+  &__message {
+    @include font_32;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__message_red {
+    color: $color-red;
+  }
+
+  &__message_blue {
+    color: $color-blue_1;
+  }
+
   &__text {
   }
 
@@ -298,6 +314,10 @@
     border-radius: 10px;
     width: 100%;
     height: 60px;
+
+    &_red {
+      border: 1px solid $color-red;
+    }
   }
 
   &__textarea {
@@ -316,6 +336,10 @@
     border-radius: 10px;
     padding: 18px 0 18px;
     max-width: 308px;
+
+    &_blue {
+      background: $color-blue_1;
+    }
   }
 }
 
@@ -368,18 +392,76 @@
     }
   }
 
+  .list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__dynamics:before {
+      content: url("../images/Arrow.svg");
+      margin-left: 4px;
+    }
+  }
+
   .section__banner {
-    margin: 32px 0;
+    margin: 0;
 
     &-content {
       margin: 0;
       height: 150px;
     }
+  }
 
+  .list-of-currencies {
+    padding-top: 32px;
+    padding-bottom: 60px;
+  }
+
+  .currencies {
+  }
+
+  .currency {
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(194, 188, 198, 0.8);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &__title-wrap {
+      margin-right: 20px;
+    }
+
+    &__title {
+      @include font_32;
+      margin-bottom: 18px;
+    }
+
+    &__info-wrap {
+      display: flex;
+      margin-top: 16px;
+    }
   }
 
 
+
+  .review {
+    &__message {
+      text-align: start;
+    }
+  }
 }
+
+
 
 @media (max-width: 768px) {
   .title_text {
@@ -401,19 +483,165 @@
     &__link {
       margin-bottom: 15px;
       @include font_8;
+      margin-right: auto;
+    }
+  }
+
+  .list {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+
+    &__link {
+      @include font_8;
+    }
+
+    &__dynamics:before {
+      content: url("../images/Arrow_mobile.svg");
+      margin-left: 4px;
     }
   }
 
   .section__banner {
-    margin: 12px 0;
-
     &-content {
-      height: 70px;
+      height: 56px;
     }
   }
 
+  .list-of-currencies {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
+  .currency {
+    padding: 8px;
+    box-shadow: 0 0.901169px 4.50585px rgba(194, 188, 198, 0.8);
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    &__title-wrap {
+      grid-column: 1 / 7;
+      margin-right: 4px;
+    }
+
+    &__title {
+      @include font_16;
+      margin-bottom: 8px;
+    }
+
+    &__img {
+      height: 126px;
+    }
+
+    &__info-wrap {
+      grid-column: 7 / -1;
+      flex-direction: column;
+    }
+
+    &__btn-wrap {
+      grid-column: 7 / -1;
+    }
+
+    &__btn {
+      @include font_10;
+      border-radius: 4px;
+      padding: 10px 27px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .info {
+
+    &__item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+      margin-right: 0;
+    }
+
+    &__exchange:before {
+      content: '';
+      background-image: url("../images/currency_exchange.svg");
+      width: 18px;
+      height: 18px;
+      margin-right: 4px;
+      background-size: cover;
+    }
+
+    &__rating:before {
+      content: '';
+      background-image: url("../images/chart_graph.svg");
+      width: 18px;
+      height: 18px;
+      margin-right: 4px;
+      background-size: cover;
+    }
+
+    &__review:before {
+      content: '';
+      background-image: url("../images/bubble chat.svg");
+      width: 18px;
+      height: 18px;
+      margin-right: 4px;
+      background-size: cover;
+    }
+  }
+
+  .exchangers {
+    padding: 8px 0 10px;
+
+    &__top {
+      background: url('../images/change.png') right / auto no-repeat;
+      background-size: 50%;
+      margin-bottom: 32px;
+    }
+
+    &__title {
+      margin-bottom: 8px;
+    }
+
+    &__text {
+      max-width: 100%;
+    }
+
+    &__text:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    &__bottom {
+      &-item {
+        margin-bottom: 9px;
+      }
+
+      &-item:before {
+        content: '';
+        background-image: url("../images/approved_check.svg");
+        width: 18px;
+        height: 18px;
+        margin-right: 6px;
+        background-size: cover;
+      }
+
+      & ul {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
 
   .comments {
     padding-top: 30px;
@@ -421,15 +649,24 @@
 
     &__title-wrap {
       margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      align-items: start;
     }
 
     &__title {
-      margin-right: 46px;
+      margin-right: 0;
       margin-bottom: 16px;
+      grid-column: 0 / 1;
     }
 
     &__subtitle {
       margin-right: 0;
+      grid-column: 0 / 2;
+    }
+
+    &__btn {
     }
 
     &__name-wrap {
@@ -449,7 +686,7 @@
       @include font_10;
       border-radius: 4px;
       padding: 10px 7px;
-      width: 138px;
+      width: 153px;
     }
   }
 
@@ -460,9 +697,14 @@
       margin-bottom: 8px;
     }
 
+    &__message {
+      @include font_16;
+      margin-bottom: 8px;
+    }
+
     & ul {
-      margin-top: 20px;
-      margin-bottom: 30px;
+      margin-top: 4px;
+      margin-bottom: 8px;
     }
   }
 
@@ -482,8 +724,8 @@
     &__btn {
       @include font_10;
       border-radius: 4px;
-      padding: 10px 0 10px;
-      max-width: 138px;
+      padding: 10px 8px;
+      max-width: 153px;
     }
   }
 
@@ -513,7 +755,7 @@
       justify-content: space-between;
 
       & ul {
-        padding-bottom: 8px;
+        padding: 10px 0;
       }
     }
   }

@@ -26,19 +26,19 @@
                     <span class="list__dynamics dynamics__btc"></span>
                 </li>
                 <li class="list__item">
-                    <a class="list__link subtitle_text" href="#">ETH 2,060 $</a>
+                    <a class="list__link" href="#">ETH 2,060 $</a>
                     <span class="list__dynamics dynamics__eth"></span>
                 </li>
                 <li class="list__item">
-                    <a class="list__link subtitle_text" href="#">USDT 0,499 $</a>
+                    <a class="list__link" href="#">USDT 0,499 $</a>
                     <span class="list__dynamics dynamics__usdt"></span>
                 </li>
                 <li class="list__item">
-                    <a class="list__link subtitle_text" href="#">BNB 331,23 $</a>
+                    <a class="list__link " href="#">BNB 331,23 $</a>
                     <span class="list__dynamics dynamics__bnb"></span>
                 </li>
                 <li class="list__item">
-                    <a class="list__link subtitle_text" href="#">USDC 1,00 $</a>
+                    <a class="list__link" href="#">USDC 1,00 $</a>
                     <span class="list__dynamics dynamics__usdc"></span>
                 </li>
             </ul>
@@ -270,6 +270,10 @@
     <section class="review">
         <div class="container">
             <h2 class="review__title title_text">Оставить комментарий</h2>
+            <div>
+                <h3 class="review__message review__message_red review__message_blue">Это поле обязательно к
+                    заполнению!</h3>
+            </div>
             <span class="review__text subtitle_text">Оцените данный обзор</span>
             <ul class="stars">
                 <li class="stars__item"></li>
@@ -278,14 +282,14 @@
                 <li class="stars__item"></li>
                 <li class="stars__item"></li>
             </ul>
-            <form class="form">
+            <form class="form review__form" id="form">
                 <label class="form__label subtitle_text" for="inpName">Напишите ваше имя:
-                    <input class="form__inp" id="inpName" type="text" required>
+                    <input class="form__inp form__inp_red" id="inpName" type="text" required>
                 </label>
                 <label class="form__label subtitle_text" for="inpText">Напишите ваш комментарий:
-                    <textarea class="form__textarea form__inp" id="inpText" required></textarea>
+                    <textarea class="form__textarea form__inp form__inp_red" id="inpText" required></textarea>
                 </label>
-                <button class="form__btn" type="submit">оставить комментарий</button>
+                <button class="form__btn form__btn_blue" id="formBtn" type="submit">оставить комментарий</button>
             </form>
         </div>
     </section>
@@ -303,17 +307,16 @@
         <a class="footer__link" href="#">ТОП ОБМЕННИКОВ</a>
         <div class="footer__info-block">
             <ul>
-                <li class=" main_text">Здесь написана информация например: Топ обменников информационно — аналитический
-                    портал
+                <li class=" main_text">Здесь написана информация например:
                 </li>
-                <li class=" main_text">Пользовательское соглашение Политика конфиденциальности Отказ от
-                    ответственности
+                <li class=" main_text">Топ обменников информационно — аналитический
+                    портал
                 </li>
             </ul>
             <ul>
-                <li class=" main_text">Пользовательское соглашение</li>
-                <li class=" main_text">Политика конфиденциальности</li>
-                <li class=" main_text">Отказ от ответственности</li>
+                <li class=" main_text"><a href="">Пользовательское соглашение</a></li>
+                <li class=" main_text"><a href="">Политика конфиденциальности</a></li>
+                <li class=" main_text"><a href="">Отказ от ответственности</a></li>
             </ul>
             <ul>
                 <li class=" main_text">Email: pochta@mail.com</li>

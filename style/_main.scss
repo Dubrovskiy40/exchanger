@@ -63,6 +63,6 @@ body {
 @media (max-width: 768px) {
   .container {
     max-width: calc(375px - 16px * 2); /* padding: 0 calc(50% - 343px / 2); */
-    padding: 0 16px;
+    padding: 0;
   }
 }
