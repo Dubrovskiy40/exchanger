@@ -180,14 +180,14 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+  border-radius: 10px;
+  padding: 18px 95px 20px 95px;
   display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: #FCFBFD;
   background: #1D62E8;
-  border-radius: 10px;
-  padding: 18px 112px 20px 112px;
 }
 .currency__btn:hover {
   cursor: pointer;
@@ -449,6 +449,9 @@ body {
   .currency__info-wrap {
     display: flex;
     margin-top: 16px;
+  }
+  .currency__btn {
+    padding: 15px 70px 16px 70px;
   }
   .review__message {
     text-align: start;
